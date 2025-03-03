@@ -1,0 +1,113 @@
+/*"position: sticky" hace que en (en este caso), la barra de navegacion siempre este arriba*/
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 2.5rem;
+    background-color: rgb(135, 35, 65);
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    transition: background-color ease-in-out 0.2s;
+}
+
+a:hover {
+    background-color: gray;
+}
+
+.colorfondo {
+    background-color: #09122C;
+}
+
+main {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+/*Esto afecta directamente la imagen del Header*/
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    cursor: default;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(135, 35, 65);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+/*Esta es la caja de "Lo mejor de este mes"*/
+.lomejor {
+    padding: 20px;
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+}
+
+/*Esta es la seccion de las imagenes de todas las imagenes.*/
+.imgdir > img {
+    padding: 10px;
+    display: block;
+    border-radius: 15%;
+    margin: auto;
+}
+
+.imgdir {
+    cursor: default;
+    border-radius: 10px;
+    background-color: rgb(190, 49, 68);
+    width: 430px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/*Esta es la decoracion de todas las cajas excepto por"Lo mejor de este mes", el "overflow-x: scroll;" es  para que se muestre un scrol de izq a drch'*/
+.Todas {
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+
+/*Esto oculta las scrol bar.*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.vermas {
+    font-size: 40px;
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.vermas:hover {
+    color: white;
+}
