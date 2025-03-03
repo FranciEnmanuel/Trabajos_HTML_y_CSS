@@ -1,0 +1,39 @@
+.Jack {
+    background: linear-gradient(#FFD5EA 50%,#00D5EA);
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px 10px 20px 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.Starling {
+    background: linear-gradient(#00FFEA,#00DC62);
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 20px 10px 20px;
+    height: 50px;
+    width: 200px;
+}
+
+.Yadiel {
+    background: linear-gradient(#00DC62,#00FFEA );
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px 10px 20px 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.Junier {
+    background: linear-gradient(#00D5EA,#FFD5EA 50%);
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 20px 10px 20px;
+    height: 50px;
+    width: 200px;
+}
