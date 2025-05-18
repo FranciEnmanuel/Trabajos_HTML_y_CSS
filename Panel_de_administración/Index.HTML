@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="d-flex">
+
+    <div class="sidebar">
+      <h4>Administracion de Estudiantes</h4>
+      <div class="profile mt-4">
+        <img src="image.png" alt="Usuario" />
+        <span>Franci</span>
+      </div>
+      <a href="" data-bs-toggle="modal" data-bs-target="#modalRegistrarse">Registrarse</a>
+      <a href="" data-bs-toggle="modal" data-bs-target="#modalEstudiante">Ingresar Estudiante</a>
+      <a href="" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a>
+    </div>
+
+    <div class="flex-grow-1">
+      <div class="topbar profile">
+          <img src="image.png" alt="Usuario" />
+          <strong>Franci</strong>
+          <span id="hora"></span>
+        <div class="d-flex gap-3">
+          <span class="badge">General</span>
+          <span class="badge">Matemáticas</span>
+          <span class="badge">Ciencias</span>
+          <span class="badge">Lengua</span>
+          <span class="badge" >Historia</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Lista de Estudiantes</h2>
+        <table class="table table-hover">
+          <thead class="table-dark text-center">
+            <tr>
+              <th>Nombre</th>
+              <th>Área</th>
+              <th>Edad</th>
+              <th>Número</th>
+              <th>Correo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Camila Rodríguez</td><td>Matemáticas</td><td>15</td><td>809-123-4567</td><td>camila@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Juan Pérez</td><td>Ciencias</td><td>16</td><td>809-234-5678</td><td>juan@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Sofía Gómez</td><td>Lengua</td><td>14</td><td>809-345-6789</td><td>sofia@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Andrés Díaz</td><td>Historia</td><td>15</td><td>809-456-7890</td><td>andres@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Valeria López</td><td>Matemáticas</td><td>16</td><td>809-567-8901</td><td>valeria@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Lucas Herrera</td><td>Lengua</td><td>15</td><td>809-678-9012</td><td>lucas@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Isabella Núñez</td><td>Ciencias</td><td>14</td><td>809-789-0123</td><td>isa@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Mateo Fernández</td><td>Historia</td><td>15</td><td>809-890-1234</td><td>mateo@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Emma Castillo</td><td>Matemáticas</td><td>16</td><td>809-901-2345</td><td>emma@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+            <tr><td>Tomás Jiménez</td><td>Ciencias</td><td>15</td><td>809-012-3456</td><td>tomas@example.com</td><td><button class="btn btn-sm btn-danger">Eliminar</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+ <!-- Modal Registro de usuario -->
+<div class="modal fade" id="modalRegistrarse">
+  <div class="modal-dialog modal-content">
+    <form>
+      <div class="modal-header">
+        <h5 class="modal-title">Registrarse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-2" placeholder="Nombre Completo" required>
+        <input type="email" class="form-control mb-2" placeholder="Correo" required>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+ <!-- Modal Ingresar Estudiante -->
+<div class="modal fade" id="modalEstudiante">
+  <div class="modal-dialog modal-content">
+    <form>
+      <div class="modal-header">
+        <h5 class="modal-title">Ingresar Estudiante</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-2" placeholder="Nombre Completo" required>
+        <select class="form-select mb-2" required>
+          <option value="">Área</option>
+          <option>Matemáticas</option><option>Ciencias</option><option>Lengua</option><option>Historia</option>
+        </select>
+        <input type="number" class="form-control mb-2" placeholder="Edad" required min="1">
+        <input type="tel" class="form-control mb-2" placeholder="Número" required>
+        <input type="email" class="form-control mb-2" placeholder="Correo" required>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Contacto -->
+<div class="modal fade" id="modalContacto" tabindex="-1">
+  <div class="modal-dialog modal-content">
+    <form>
+      <div class="modal-header">
+        <h5 class="modal-title">Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-2" placeholder="Nombre" required>
+        <input type="email" class="form-control mb-2" placeholder="Correo" required>
+        <textarea class="form-control mb-2" placeholder="Mensaje" required rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-info" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="Script.js"></script>
+</body>
+</html>
